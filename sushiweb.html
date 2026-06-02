@@ -3,24 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sushiweb</title>
+    <title>Tanu-Sushi| tu mejor sushi a domicilio</title>
     <link rel="stylesheet" href="estilosushi.css">
 </head>
 <body>
 
 <header class="cabecera">
     <nav class="navegador">
-        <a href="#inicio"class="nav link">inicio<a>
-        <a href="#menu" class="nav-link">menu</a>
-        <a href="#rolls" class="nav-link">rolls</a>
-        <a href="#contacto"class="nav-link">contacto<a>
+        <ul>
+           <li><a href="#inicio" class="nav-link">inicio</a></li>
+            <li><a href="#Menu" class="nav-link">Menu</a></li>
+            <li><a href="#rolls" class="nav-link">rolls</a></li>
+            <li> <a href="#contacto"class="nav-link">contacto<a></li>
+            </ul>
     </nav>
 </header>
 
-<section id="inicio">bienvenido tanu sushi</section>
-<section id="menu">sushi burger</section>
-<section id="rolls">nuestros rolls</section>
-<section id="contacto">nuestro instagram!</section>
+<section id="inicio">
+    <h1>Tanu sushi</h1>
+        <p>bienvenido al mejor sushi a domicilio</p>
+</section>
+
+<section id="Menu">
+    <h2>nuestras sushi burgers</h2>
+    <div class="sushi-burgers">
+        <article class="burger-salmon">
+            <img src="imagenes/burger de salmon.jpg" alt="burger de salmon crudo">
+            <h3>hamburgesa de salmon crudo</h3><p>la mejor hamburgesa elegida por ustedes!</p>
+            <span class="precio">$12.000</span>
+            <button type="button">añadir al carrito</button>
+        </article>
+        <article class="burger-camaron">
+            <img src="imagenes/burger de camaron.jpg" alt="burger de camarones cocidos">
+            <h3>hamburgesa de camarones</h3> <p>hamburgesa de camarones cocinados con palta, queso y camaron.</p>
+            <span class="precio">$12.000</span>
+            <button type="button">añadir al carrito</button>
+        </article>
+        <article class="tanu">
+            <img src="imagenes/tanu burger.jpg" alt="especial de la casa">
+            <h3>hamburgesa especial de la casa</h3> <p>hamburgesa de langostinos rebozados, queso, palta</p>
+            <span class="precio">$15.000</span>
+            <button type="button">añadir al carrito</button>
+        </article>
+    </div>
+</section>
+<section id="rolls">
+    <h2>nuestros rolls</h2>
+    <div class="rolls-sushi">
+        <article class="roll-salmon">
+            <img src="imagenes/salmon-maki-1200.jpg" alt="roll de salmon crudo">
+            <h3>roll sur-frio</h3><p>nuestros roll de salmon crudo y queso</p>
+            <span class="precio">$7.000</span>
+            <button type="button">añadir al carrito</button>
+        </article>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>contactanos!</h2>
+
+    <form action="#" method="post">
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="tu nombre">
+
+    <label for="direccion">direccion</label>
+    <input type="text" name="direccion" id="direccion" placeholder="tu direccion">
+
+    <label for="pago">metodo de pago</label>
+    <select name="pago" id="pago">
+        <option value="efectivo">efectivo</option>
+        <option value="mercado-pago">mercado pago</option>
+    </select>
+    <button type="submit">enviar pedido</button>
+</form>
+</section>
+
+
 
 </body>
 </html>
