@@ -9,43 +9,216 @@
 <body>
 
 <header class="cabecera">
-    <nav class="navegador">
+    <div class="logo">
+    <h1>Tanu sushi</h1>
+        <p>bienvenido al mejor sushi a domicilio</p>
+    </div>
+    <nav class="navegador-inicio">
         <ul>
            <li><a href="#inicio" class="nav-link">inicio</a></li>
             <li><a href="#Menu" class="nav-link">Menu</a></li>
             <li><a href="#rolls" class="nav-link">rolls</a></li>
-            <li> <a href="#contacto"class="nav-link">contacto<a></li>
+            <li> <a href="#contacto"class="nav-link">contacto</a></li>
             </ul>
     </nav>
 </header>
 
-<section id="inicio">
-    <h1>Tanu sushi</h1>
-        <p>bienvenido al mejor sushi a domicilio</p>
+<section class="inicio">
 </section>
 
 <section id="Menu">
-    <h2>nuestras sushi burgers</h2>
-    <div class="sushi-burgers">
-        <article class="burger-salmon">
-            <img src="imagenes/burger de salmon.jpg" alt="burger de salmon crudo">
-            <h3>hamburgesa de salmon crudo</h3><p>la mejor hamburgesa elegida por ustedes!</p>
-            <span class="precio">$12.000</span>
-            <button type="button">añadir al carrito</button>
-        </article>
-        <article class="burger-camaron">
-            <img src="imagenes/burger de camaron.jpg" alt="burger de camarones cocidos">
-            <h3>hamburgesa de camarones</h3> <p>hamburgesa de camarones cocinados con palta, queso y camaron.</p>
-            <span class="precio">$12.000</span>
-            <button type="button">añadir al carrito</button>
-        </article>
-        <article class="tanu">
-            <img src="imagenes/tanu burger.jpg" alt="especial de la casa">
-            <h3>hamburgesa especial de la casa</h3> <p>hamburgesa de langostinos rebozados, queso, palta</p>
-            <span class="precio">$15.000</span>
-            <button type="button">añadir al carrito</button>
-        </article>
-    </div>
+    <h2>nuestros menu!</h2>
+    <nav class="navegador-interno">
+        <ul>
+            <li><a href="#sushi-burger" class="nav-link">sushi burgers</a></li>
+            <li><a href="#hot-sushi-dog" class="nav-link">hot-sushi-dog</a></li>
+            <li><a href="#bebidas" class="nav-link">bebidas</a></li>
+            <li><a href="#ensaladas" class="nav-link">ensaladas</a></li>
+            <li><a href="#postres" class="nav-link">postres</a></li>
+            <li><a href="#gourmet" class="nav-link">gourmet</a></li>
+            <li><a href="#nuevo" class="nav-link">nuevo!</a></li>
+        </ul>
+    </nav>
+
+    <section id="sushi-burger">
+        <h3>nuestras hamburgesas de sushi</h3>
+        <p>(toda hamburgesa viene acompañada de papas fritas!)</p>
+
+        <div class="sushi-burgers">
+            <article class="burger-salmon">
+                <img src="imagenes/sushi burgers/salmon.jpeg" alt="sushi burger salmon">
+                <h3>sushi burger de salmon</h3> <p>hamburgesa rellena de salmon, queso y palta.</p>
+                    <label for="rebozado">seleccione</label>
+                <select name="panizado" id="panizado-salmon">
+                    <option value="panko">panko-$15.000</option>
+                    <option value="alga">alga-$13.000</option>
+                </select>
+
+                <label for="cantidades-salmon">cantidad</label>
+                     <select name="cantidades" id="cantidades-salmon">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-camaron">
+                <img src="imagenes/sushi burgers/camarones.jpeg" alt="sushi burger camarones">
+                <h3>sushi burger de camarones</h3><p>hamburgesa rellena de camaron, queso y palta.</p>
+                <select name="panizado" id="panizado-camarones">
+                    <option value="panko">panko-$15.000</option>
+                    <option value="alga">alga-$13.000</option>
+                </select>
+                
+                <label for="cantidades-camaron">cantidad</label>
+                     <select name="cantidades" id="cantidades-camaron">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-atun">
+                <img src="imagenes/sushi burgers/atun.jpeg" alt="sushi burger atun">
+                <h3>sushi burger de atun</h3><p>hamburgesa rellena de atun, queso y palta.</p>
+                <select name="panizado" id="panizado-atun">
+                    <option value="panko">panko-$15.000</option>
+                    <option value="alga">alga-$13.000</option>
+                </select>
+                
+               <label for="cantidades-atun">cantidad</label>
+                     <select name="cantidades" id="cantidades-atun">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-ahumado">
+                <img src="imagenes/sushi burgers/salmon ahumado.jpeg" alt="sushi burger ahumado">
+                <h3>sushi burger de salmon ahumado</h3><p>hamburgesa rellena de salmon ahumado, queso y palta.</p>
+                <select name="panizado" id="panizado-ahumado">
+                    <option value="panko">panko-$17.000</option>
+                    <option value="alga">alga-$15.000</option>
+                </select>
+                <label for="cantidades-ahumado">cantidad</label>
+                     <select name="cantidades" id="cantidades-ahumado">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-tanu">
+                <img src="imagenes/sushi burgers/langostino rebozados.jpeg" alt="sushi burger Tanu">
+                <h3>sushi burger Tanu</h3><p>hamburgesa rellena de langostinos rebozados, queso y palta</p>
+                <label for="rebozado">seleccione</label>
+                <select name="panizado" id="panizado-tanu">
+                    <option value="panko">panko-$17.000</option>
+                    <option value="alga">alga-$15.000</option>
+            </select>
+                <label for="cantidades-tanu">cantidad</label>
+                     <select name="cantidades" id="cantidades-tanu">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-pollo">
+                <img src="imagenes/sushi burgers/pollo.jpeg" alt="sushi burger pollo">
+                <h3>sushi burger pollo</h3><p>hamburgesa rellena de nuggets de pollo, queso y palta</p>
+                <label for="rebozado">seleccione</label>
+                <select name="panizado" id="panizado-pollo">
+                    <option value="panko">panko-$15.000</option>
+                    <option value="alga">alga-$13.000</option>
+                </select>
+                <label for="cantidades-pollo">cantidad</label>
+                     <select name="cantidades" id="cantidades-pollo">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-sakura">
+                <img src="imagenes/sushi burgers/sakura.jpeg" alt="sushi burger sakura">
+                <h3>sushi burger sakura </h3><p>sushi burger rellena de langostinos, salmon, queso y palta</p>
+                <label for="rebozado"></label>
+                <select name="panizado" id="panizado-sakura">
+                    <option value="panko">panko-$17.000</option>
+                    <option value="alga">alga-$15.000</option>
+                </select>
+                <label for="cantidades-sakura">cantidad</label>
+                     <select name="cantidades" id="cantidades-sakura">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="burger-berenjena">
+                <img src="imagenes/sushi burgers/berengena.jpeg" alt="sushi burger burger-berenjena">
+                <h3>sushi burger de berenjena</h3><p>sushiburger rellena de berenjena queso y palta</p>
+                <label for="panizado"></label>
+                <select name="panizado" id="panizado-berenjena">
+                    <option value="panko">panko-$15.000</option>
+                    <option value="alga">alga-$13.000</option>
+                </select>
+                <label for="cantidades-berenjena">cantidad</label>
+                     <select name="cantidades" id="cantidades-berenjena">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+            <article class="balde">
+                <img src="imagenes/sushi burgers/balde.jpeg" alt="balde de mini sushi burgers">
+                <h3>Balde de mini suhsi burgers</h3><p>balde de 4 mini sushibugers rellenas de salmon, queso y palta</p>
+                <label for="panizado"></label>
+                <select name="panizado" id="panizado-balde">
+                    <option value="panko">panko-$20.000</option>
+                    <option value="alga">alga-$17.000</option>
+                </select> 
+                    <label for="cantidades-balde">cantidad</label>
+                     <select name="cantidades" id="cantidades-balde">
+                        <option value="cantidades">1</option>
+                        <option value="cantidades">2</option>
+                        <option value="cantidades">3</option>
+                        <option value="cantidades">4</option>
+                        <option value="cantidades">5</option>
+                    </select>
+                <button type="button">añadir al carrito</button>
+            </article>
+
+        </div>
+    
+    </section>
 </section>
 <section id="rolls">
     <h2>nuestros rolls</h2>
