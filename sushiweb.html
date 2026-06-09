@@ -30,8 +30,8 @@
 </section>
 
 <section id="menu">
-    <h2>nuestros menu!</h2>
-    <nav class="navegador-interno">
+    <h2>Nuestro menú</h2>
+    <nav aria-label="categorias de menú">
         <ul>
             <li><a href="#sushi-burger" class="nav-link">sushi burgers</a></li>
             <li><a href="#hot-sushi-dog" class="nav-link">hot-sushi-dog</a></li>
@@ -69,9 +69,9 @@
                   seleccione rebozado
                 </label>
                 <select 
-                class="producto-select"
-                 name="panizado" 
-                 id="rebozado-salmon">
+                class="producto-select" 
+                name="panizado" 
+                id="rebozado-salmon">
                     <option value="panko">panko</option>
                     <option value="alga">alga</option>
                 </select>
@@ -90,49 +90,59 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-
                 </div>
                     <span class="producto-precio">$12.000</span>
-                <button class="producto-boton" type="button">añadir al carrito</button>
+                <button class="producto-boton" type="button"
+                >añadir al carrito
+            </button>
             </article>
 
             <article class="producto-card">
-                <img class="producto-imagen" src="imagenes/sushi-burgers/camarones.jpeg" alt="sushi burger-camarones">
-                <h3 class="producto-titulo">sushi burger de camarones</h3><p class="producto-descripcion">hamburgesa rellena de camaron, queso y palta.</p>
-                <label for="panizado-camarones">seleccione</label>
-                <select name="panizado" id="panizado-camarones">
+                <img class="producto-imagen" 
+                src="imagenes/sushi-burgers/camarones.jpeg" 
+                alt="sushi burger-camarones">
+                <h3 class="producto-titulo">sushi burger de camarones</h3>
+                <p class="producto-descripcion">hamburgesa rellena de camaron, queso y palta.</p>
+                <div class="producto-opciones">
+                    <label for="panizado-camarones">seleccione</label>
+                    <select name="panizado" id="panizado-camarones">
                     <option value="panko">panko</option>
                     <option value="alga">alga</option>
-                </select>
+                    </select>
                 
-                <label for="cantidades-camaron">cantidad</label>
-                     <select class="producto-select" name="cantidades" id="cantidades-camaron">
+                    <label for="cantidades-camaron">cantidad</label>
+                    <select class="producto-select" name="cantidades" id="cantidades-camaron">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                </div>
+                
                 <button type="button">añadir al carrito</button>
             </article>
 
             <article class="producto-card">
                 <img class="producto-imagen" src="imagenes/sushi-burgers/atun.jpeg" alt="sushi-burger-atun">
-                <h3 class="producto-titulo">sushi burger de atun</h3><p class="producto-descripcion">hamburgesa rellena de atun, queso y palta.</p>
-                <label for="panizado-atun">seleccione</label>
-                <select name="panizado" id="panizado-atun">
-                    <option value="panko">panko</option>
-                    <option value="alga">alga</option>
-                </select>
+                <h3 class="producto-titulo">sushi burger de atun</h3>
+                <p class="producto-descripcion">hamburgesa rellena de atun, queso y palta.</p>
                 
-               <label for="cantidades-atun">cantidad</label>
-                     <select class="producto-select" name="cantidades" id="cantidades-atun">
+                <div class="producto-opciones">
+                    <label for="panizado-atun">seleccione</label>
+                    <select name="panizado" id="panizado-atun">
+                        <option value="panko">panko</option>
+                        <option value="alga">alga</option>
+                    </select>
+                    <label for="cantidades-atun">cantidad</label>
+                    <select class="producto-select" name="cantidades" id="cantidades-atun">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                </div>
                 <button class="producto-boton" type="button">añadir al carrito</button>
             </article>
 
@@ -140,18 +150,21 @@
                 <img class="producto-imagen" src="imagenes/sushi-burgers/salmon-ahumado.jpeg" alt="sushi-burger-ahumado">
                 <h3 class="producto-titulo">sushi burger de salmon ahumado</h3><p class="producto-descripcion">hamburgesa rellena de salmon ahumado, queso y palta.</p>
                 <label for="panizado-ahumado">seleccione</label>
-                <select name="panizado" id="panizado-ahumado">
-                    <option value="panko">panko</option>
-                    <option value="alga">alga</option>
-                </select>
-                <label for="cantidades-ahumado">cantidad</label>
-                     <select class="producto-select" name="cantidades" id="cantidades-ahumado">
+                <div class="producto-opciones">
+                    <select name="panizado" id="panizado-ahumado">
+                        <option value="panko">panko</option>
+                        <option value="alga">alga</option>
+                    </select>
+                 <label for="cantidades-ahumado">cantidad</label>
+                    <select class="producto-select" name="cantidades" id="cantidades-ahumado">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                </div>
+                
                 <button type="button">añadir al carrito</button>
             </article>
 
@@ -463,12 +476,13 @@
 </section>
 
 <section id="ensaladas">
-    <h2>nuestras ensaladas!</h2>
+    <h2>nuestras ensaladas</h2>
     <div class="productos-grid">
 
         <article class="producto-card">
             <img  class="producto-imagen" src="imagenes/ensaladas/mai.jpeg" alt="ensalada-mai">
-            <h3 class="producto-titulo">ensalada mai</h3><p>ensalada de pepino,queso,palta y salmon crudo en cubos</p>
+            <h3 class="producto-titulo">ensalada mai</h3>
+            <p class="producto-descripcion">ensalada de pepino,queso,palta y salmon crudo en cubos</p>
             <label for="ensalada-mai">ingredientes</label>
             <select class="producto-select" name="ensalda-mai" id="ensalada-mai">
                 <option value="con-todo" class="producto-opcion">con todo</option>
@@ -596,7 +610,7 @@
             <button type="button">añadir al carrito</button>
         </article>
     </div>
-    </section>
+</section>
 
     <section id="postres">
         <h2>nuestros postres!</h2>
@@ -755,11 +769,12 @@
     </section>
         
     <section id="gourmet">
-        <H2>platos gourmet</H2>
-
-        <article class="producto-card">
-            <img  class="producto-imagen" src="imagenes/gourmet/marzo.jpeg" alt="marzo">
-            <h3 class="producto-titulo">Plato Marzo</h3><p>Salmon cocido en reduccion de salsa aridulce, acompañado de tomates cherrys y esparragos asados</p>
+        <h2>platos gourmet</h2>
+        <div class="productos-grid">
+            <article class="producto-card">
+                <img  class="producto-imagen" src="imagenes/gourmet/marzo.jpeg" alt="marzo">
+            <h3 class="producto-titulo">Plato Marzo</h3>
+            <p class="producto-descripcion">Salmon cocido en reduccion de salsa aridulce, acompañado de tomates cherrys y esparragos asados</p>
             <label for="marzo">cantidad</label>
             <select class="producto-select" name="cantidad-marzo" id="cantidad-marzo">
                 <option value="1">1</option>
@@ -770,11 +785,12 @@
             </select>
             <span class="precio">$30.000</span>
             <button type="button">añadir al carrito</button>
-        </article>
-
-        <article class="producto-card">
+            </article>
+        
+         <article class="producto-card">
             <img  class="producto-imagen" src="imagenes/gourmet/sebiche gali.jpeg" alt="seviche-gali">
-            <h3 class="producto-titulo">Ceviche Gali</h3><p>Ceviche de camarones, palta, tomate, cebolla morada, morron, cilantro y condimientos!</p>
+            <h3 class="producto-titulo">Ceviche Gali</h3>
+            <p class="producto-descripcion">Ceviche de camarones, palta, tomate, cebolla morada, morron, cilantro y condimientos!</p>
             <label for="seviche-gali">cantidad</label>
             <select class="producto-select" name="cantidad-seviche-gali" id="cantidad-seviche-gali">
                 <option value="1">1</option>
@@ -785,12 +801,13 @@
             </select>
             <span class="precio">$20.000</span>
             <button type="button">añadir al carrito</button>
-        </article>
+                </article>
 
-<article class="producto-card">
+            <article class="producto-card">
             <img 
             class="producto-imagen" src="imagenes/gourmet/tataki.jpeg" alt="tataki">
-            <h3 class="producto-titulo">Tataki</h3><p>Ensalada de lechuga, rucula, cebolla morada, mango, palta, brotes de soja, batata fritas, salmon sellado. coronado con una salsa agridulce y lluvia de semillas de sesamo tostadas.</p>
+            <h3 class="producto-titulo">Tataki</h3>
+            <p class="producto-descripcion">Ensalada de lechuga, rucula, cebolla morada, mango, palta, brotes de soja, batata fritas, salmon sellado. coronado con una salsa agridulce y lluvia de semillas de sesamo tostadas.</p>
             <label for="tataki">cantidad</label>
             <select class="producto-select" name="cantidad-tataki" id="cantidad-tataki">
                 <option value="1">1</option>
@@ -803,6 +820,10 @@
             <button type="button">añadir al carrito</button>
         </article>
     </section>
+        </div>
+            
+
+            
 
 <section id="contacto">
     <h2>contactanos!</h2>
