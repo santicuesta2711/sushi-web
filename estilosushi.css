@@ -1,0 +1,18 @@
+:root {
+    --color-fondo:#2d5f8a;
+    --color-superficie:#d4a574;
+    --color-acento:#8b6340;
+    --color-texto:#151515;
+    --color-texto-suave:#5b9bc4;
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;}
+.logo {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
