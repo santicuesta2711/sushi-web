@@ -1,40 +1,43 @@
 :root { /*para definir las variables de color que se pueden usar en todo el documento*/ 
     --color-fondo:#2d5f8a;
-    --color-superficie:#d4a574;
+    --color-superficie:#5b9bc4;
     --color-acento:#8b6340;
     --color-texto:#151515;
-    --color-texto-suave:#5b9bc4;
+    --color-texto-suave:#4e6f83;
+    --color-texto-invertido:#b5bac4;
 }
 .cabecera{
     display: flex; /*para colocar los elementos de la cabecera en una fila*/
     justify-content: space-between; /*para colocar los elementos de la cabecera a los extremos*/
     align-items: center; /*para centrar verticalmente los elementos de la cabecera*/
-
+    padding: 20px; /*para darle un poco de espacio a los elementos de la cabecera*/
     position: sticky; /*para que la cabecera se mantenga fija al hacer scroll*/
     top: 0; /*para colocar la cabecera en la parte superior de la página*/
     background-color: var(--color-fondo); /*para darle un color de fondo a la cabecera*/
-    border-radius: 108px 66px 161px 65px; /*para darle bordes redondeados a la cabecera*/
-    border-end-end-radius: 108px 66px 161px 65px; /*para darle bordes redondeados a la esquina inferior derecha de la cabecera*/
-    -moz-outline-radius: 108px 66px 161px 65px; /*para darle bordes redondeados a la cabecera en navegadores basados en Mozilla*/
+    border-radius: 8px; /*para darle bordes redondeados a la cabecera*/
     border: 6px solid var(--color-superficie); /*para darle un borde a la cabecera*/
+    z-index: 1; /*para colocar la cabecera por encima de la imagen de fondo*/
 }
 .logo {
     display: flex; /*para colocar el logo a la izquierda*/
     align-items: center; /*para centrar verticalmente el logo*/
-    position: sticky; /*para que el logo se mantenga fijo al hacer scroll*/
 }
 .navegador-inicio ul {
-    display: flex; /*para colocar los elementos del menú en una fila*/
+    display:flex; /*para colocar los elementos del menú en una fila sin que ocupen todo el ancho disponible*/
+
     list-style: none; /*para eliminar los puntos de la lista*/
     margin: 0; /*para eliminar el margen por defecto de la lista*/
     padding: 0; /*para eliminar el padding por defecto de la lista*/
 }
 body{
+    font-size: 1rem; /*para definir el tamaño de letra base que se usará en todo el documento*/
+    font-family:quicksand, sans-serif; /*para definir la fuente de letra que se usará en todo el documento*/
     margin: 0;
     padding: 0; /*para eliminar el margen y el padding por defecto del body*/
     min-height: 100vh;  
     position: relative; /*para que el pseudo-elemento se posicione relativo al body*/
     overflow-x: hidden; /*para evitar que aparezca una barra de desplazamiento horizontal debido al pseudo-elemento*/
+    background-color: var(--color-fondo); /*para darle un color de fondo al body en caso de que la imagen de fondo no se cargue o no se muestre correctamente*/
 }
 body:before {
     content: ""; /*para crear un pseudo-elemento antes del contenido del body*/
@@ -51,10 +54,12 @@ body:before {
     min-height: 100vh; /*para que la imagen de fondo tenga una altura mínima de 100vh*/
     margin: 0; /*para eliminar el margen por defecto del body*/
     filter: blur(3px) brightness(96%) contrast(133%); /*para aplicar un filtro de desenfoque, brillo y contraste a la imagen de fondo*/
-    -webkit-filter: blur(3px) brightness(96%) contrast(133%); /*para aplicar un filtro de desenfoque, brillo y contraste a la imagen de fondo en navegadores basados en WebKit*/
-    -ms-filter: blur(3px) brightness(96%) contrast(133%); /*para aplicar un filtro de desenfoque, brillo y contraste a la imagen de fondo en navegadores basados en Internet Explorer*/
     z-index: -1; /*para colocar la imagen de fondo detrás del contenido de la página*/
 }
 
-
+p{
+    color: var(--color-texto); /*para darle un color al texto de los párrafos*/
+    font-size: 1.2rem; /*para darle un tamaño de letra a los párrafos*/
+    line-height: 1.5; /*para darle un interlineado a los párrafos*/
+}
 
